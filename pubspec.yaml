@@ -1,0 +1,47 @@
+name: pradiacheck_ai
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '^3.12.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.1.4
+  google_fonts: ^6.2.1
+  image_picker: ^1.0.7
+  tflite_flutter: ^0.12.1
+  image: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/tongue_reference.png
+    - assets/logo/icon.png
+    - assets/Model/YOLOv11n_best.tflite
+    - assets/Model/labels.txt
+
+# Konfigurasi untuk `flutter pub run flutter_launcher_icons`
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo/icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/logo/icon.png"
+  min_sdk_android: 21
+
+# Konfigurasi untuk `flutter pub run flutter_native_splash:create`
+flutter_native_splash:
+  color: "#FDF1F0"
+  image: assets/logo/icon.png
+  android_12:
+    image: assets/logo/icon.png
+    color: "#FDF1F0"
