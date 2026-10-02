@@ -49,7 +49,7 @@ flutter build apk --release
 
 | Item | Value |
 |---|---|
-| Architecture | YOLO11n (TFLite) |
+| Architecture | YOLO11n | YOLO11s | YOLO8n
 | Model file | `assets/Model/YOLOv11n_best.tflite` |
 | Labels file | `assets/Model/labels.txt` |
 | Classes | Diabetes, Nondiabetes, Pradiabetes |
